@@ -1,6 +1,10 @@
 import pandas as pd
 
-df = pd.read_excel(r"C:\Users\jahanavi gorli\Downloads\CARS.xlsx")
+import os
+import pandas as pd
+
+file_path = os.path.join(os.path.dirname(__file__), "CARS.xlsx")
+df = pd.read_excel(file_path)
 
 print("\n1. First 5 Rows")
 print(df.head())
